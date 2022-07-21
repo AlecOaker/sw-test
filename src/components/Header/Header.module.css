@@ -1,0 +1,36 @@
+.container {
+    width: 100%;
+    max-width: 1470px;
+    margin: 0 auto;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tabs {
+    margin-left: 101px;
+}
+
+.category {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    margin: 16px;
+    border-bottom: 2px solid;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 30px;
+}
+
+.active {
+    text-decoration: none;
+    color: #5ECE7B;
+    cursor: pointer;
+    margin: 16px;
+    border-bottom: 2px solid;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #5ECE7B;
+}
