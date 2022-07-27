@@ -1,0 +1,73 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 80px;
+
+}
+
+
+.imgs {
+    display: flex;
+    flex-direction: column;
+}
+
+.small-image {
+    width: 79px;
+    height: auto;
+    margin-bottom: 40px;
+}
+
+.main-image {
+    width: 610px;
+    height: auto;
+}
+
+.product {
+    display: flex;
+    margin-left: 40px;
+}
+
+.title-brand {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 27px;
+    margin-bottom: 16px;
+}
+
+.title-model {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 27px;
+    margin-bottom: 43px;
+}
+
+.size {
+
+}
+
+.name {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.sizes {
+    display: flex;
+}
+
+.size-specs {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    padding: 14px 22px;
+    border: 1px solid #1D1F22;
+    margin-right: 12px;
+    margin-top: 8px;
+    margin-bottom: 24px;
+}

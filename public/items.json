@@ -2,66 +2,176 @@
   {
     "id": 0,
     "title": "Apollo Running Short",
-    "image": "./pic/Image1.png",
-    "price": 50,
+    "image": "images/Image1.png",
+    "price": "50.00",
     "category": "women",
-    "stock": "10"
+    "size": {
+      "XS": {
+        "grey": "2",
+        "black": "3",
+        "green": "2"
+      },
+      "S": {
+        "grey": "2",
+        "black": "1",
+        "green": "2"
+      },
+      "M": {
+        "grey": "2",
+        "black": "3",
+        "green": "5"
+      },
+      "L": {
+        "grey": "6",
+        "black": "3",
+        "green": "2"
+      }
+    }
   },
   {
     "id": 1,
     "title": "Apollo Running Short",
-    "image": "./pic/Image2.png",
-    "price": 50,
+    "image": "images/Image2.png",
+    "price": "50.00",
     "category": "women",
-    "stock": "2"
+    "size": {
+      "XS": {
+        "grey": "4",
+        "black": "2",
+        "green": "2"
+      },
+      "S": {
+        "grey": "5",
+        "black": "11",
+        "green": "2"
+      },
+      "M": {
+        "grey": "2",
+        "black": "13",
+        "green": "4"
+      },
+      "L": {
+        "grey": "5",
+        "black": "8",
+        "green": "4"
+      }
+    }
   },
   {
     "id": 2,
     "title": "Apollo Running Short",
-    "image": "./pic/Image3.png",
-    "price": 50,
+    "image": "images/Image6.png",
+    "price": "50.00",
     "category": "women",
-    "stock": "0"
+    "size": {
+      "XS": {
+        "grey": "0",
+        "black": "0",
+        "green": "0"
+      },
+      "S": {
+        "grey": "0",
+        "black": "0",
+        "green": "0"
+      },
+      "M": {
+        "grey": "0",
+        "black": "0",
+        "green": "0"
+      },
+      "L": {
+        "grey": "0",
+        "black": "0",
+        "green": "0"
+      }
+    }
   },
   {
     "id": 3,
     "title": "Apollo Running Short",
-    "image": "./pic/Image4.png",
-    "price": 50,
+    "image": "images/Image4.png",
+    "price": "50.00",
     "category": "women",
-    "stock": "3"
+    "size": {
+      "XS": {
+        "grey": "3",
+        "black": "3",
+        "green": "2"
+      },
+      "S": {
+        "grey": "2",
+        "black": "10",
+        "green": "2"
+      },
+      "M": {
+        "grey": "2",
+        "black": "4",
+        "green": "6"
+      },
+      "L": {
+        "grey": "7",
+        "black": "5",
+        "green": "3"
+      }
+    }
   },
   {
     "id": 4,
     "title": "Apollo Running Short",
-    "image": "./pic/Image5.png",
-    "price": 50,
+    "image": "images/Image5.png",
+    "price": "50.00",
     "category": "women",
-    "stock": "4"
+    "size": {
+      "XS": {
+        "grey": "1",
+        "black": "1",
+        "green": "1"
+      },
+      "S": {
+        "grey": "1",
+        "black": "1",
+        "green": "1"
+      },
+      "M": {
+        "grey": "1",
+        "black": "1",
+        "green": "1"
+      },
+      "L": {
+        "grey": "1",
+        "black": "1",
+        "green": "1"
+      }
+    }
   },
   {
     "id": 5,
     "title": "Apollo Running Short",
-    "image": "./pic/Image6.png",
-    "price": 50,
+    "image": "images/Image6.png",
+    "price": "50.00",
     "category": "women",
-    "stock": "5"
-  },
-  {
-    "id": 6,
-    "title": "Apollo Running Short",
-    "image": "./pic/Image2.png",
-    "price": 50,
-    "category": "men",
-    "stock": "6"
-  },
-  {
-    "id": 7,
-    "title": "Apollo Running Short",
-    "image": "./pic/Image4.png",
-    "price": 50,
-    "category": "kid",
-    "stock": "2"
+    "size": {
+      "XS": {
+        "grey": "3",
+        "black": "0",
+        "green": "0"
+      },
+      "S": {
+        "grey": "0",
+        "black": "0",
+        "green": "0"
+      },
+      "M": {
+        "grey": "3",
+        "black": "0",
+        "green": "1"
+      },
+      "L": {
+        "grey": "0",
+        "black": "0",
+        "green": "0"
+      }
+    }
   }
 ]
   

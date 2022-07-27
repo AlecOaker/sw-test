@@ -22,15 +22,6 @@ class ActionCurr extends Component {
     render() {
         return (
             <div className={styles.selector} style={{ width: 80 }}>
-                {/* <div value={this.state.currency} onChange={this.changeCurrency.bind(this)}>
-                    <p hidden>{this.state.currency}</p>
-                    <div>
-                        <span value='$'>$ USD</span>
-                        <span value='€'>€ EUR</span>
-                        <span value='¥'>¥ JPY</span>
-                    </div>
-                </div> */}
-
                 <select value={this.state.currency} onChange={this.changeCurrency.bind(this)}>
                     <option hidden>{this.state.currency}</option>
                     <option value='$'>$ USD</option>

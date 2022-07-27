@@ -1,5 +1,5 @@
 const initialState = {
-    items: [],
+    cartItems: [],
 }
 
 export default (state = initialState, action) => {
@@ -7,15 +7,15 @@ export default (state = initialState, action) => {
         case 'ADD_TO_CART':
             return {
                 ...state,
-                items: [
-                    ...state.items,
+                cartItems: [
+                    ...state.cartItems,
                     action.payload
                 ]
             }
         case 'REMOVE_FROM_CART':
             return {
                 ...state,
-                items: state.items.filter(o => o.id !== action.payload)
+                cartItems: state.cartItems.filter(o => o.id !== action.payload)
             }
         default:
             return state;

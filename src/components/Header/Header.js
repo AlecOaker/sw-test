@@ -1,8 +1,12 @@
 import React, { Component } from 'react';
 import styles from './Header.module.css'
-import logo from'../../pic/a-logo.png'
+import logo from'../../icons/a-logo.png'
 import Actions from './Actions';
 import { Link, Outlet } from 'react-router-dom';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import * as cartActions from '../../actions/cart'
+import uniqBy from 'lodash/uniqBy'
 
 class Header extends Component {
 
@@ -13,7 +17,6 @@ class Header extends Component {
             menActive: false,
             kidsActive: false
         }
-        console.log(this.state)
     }
 
     womenActiveHandler = () => {
@@ -40,7 +43,7 @@ class Header extends Component {
                     <Link className={this.state.menActive ? styles.active : styles.category} to="/men" onClick={this.menActiveHandler.bind(this)}>Men</Link> {" "}
                     <Link className={this.state.kidsActive ? styles.active : styles.category} to="/kids" onClick={this.kidsActiveHandler.bind(this)}>Kids</Link>
                 </nav>
-      <Outlet />
+                <Outlet />
                 <Link to="/">
                     <img src={logo} alt="Logo"/>
                 </Link>
@@ -50,4 +53,4 @@ class Header extends Component {
     }
 }
 
-export default Header;
+export default Header
