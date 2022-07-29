@@ -8,8 +8,9 @@ import Header from './components/Header/Header';
 import ItemPage from './components/Category/ItemPage';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import * as itemsActions from './actions/items'
-import GetId from './components/Category/ItemsParams';
+import * as cartActions from './actions/cart'
+import ItemsParams from './components/Category/ItemsParams';
+import ItemPageTest from './components/Category/ItemPageTest';
 
 
 class App extends Component {
@@ -22,13 +23,13 @@ class App extends Component {
             <Route path="/women" element={<Women />} />
             <Route path="/men" element={<Men />} />
             <Route path="/kids" element={<Kids />} />
-            <Route path="/women/:id" element={<GetId />} />
+            <Route path="/women/:id" element={<ItemsParams />} />
+            {/* <Route path="/women/:id" element={<ItemPageTest />} /> */}
         </Routes>
       </div>
     )
   }
 }
-
 
 export default App
 

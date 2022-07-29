@@ -4,6 +4,8 @@ import { bindActionCreators } from 'redux';
 import styles from "./ItemCard.module.css"
 import * as cartActions from '../../actions/cart'
 import { Link } from 'react-router-dom';
+import ItemPage from './ItemPage'
+import ItemPageTest from './ItemPageTest';
 
 const ItemCard = item => {
     const { title, price, image, id, size} = item
@@ -18,7 +20,6 @@ const ItemCard = item => {
         }
         return total
     }
-
     return (
         <div className={styles.card}>
             <Link to={`/women/${id}`}>

@@ -14,7 +14,8 @@ class Women extends Component {
       setItems(data)
     })
   }
-    render() {
+  render() {
+      
       const { items, isReady } = this.props
         return (
             <div>
@@ -39,5 +40,6 @@ const mapStateToProps = ({ items}) => ({
 const mapDispatchToProps = dispatch => ({
   ...bindActionCreators(itemsActions, dispatch)
 })
+
 export default connect(mapStateToProps, mapDispatchToProps)(Women);
 

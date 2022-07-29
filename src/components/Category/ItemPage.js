@@ -2,14 +2,16 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as itemsActions from '../../actions/items'
+import * as cartActions from '../../actions/cart'
 import styles from './ItemPage.module.css'
 
 class ItemPage extends Component {
     render() {
-        const cartItem = this.props.items[this.props.taskId]
-        const { id, title, image, price, size, description, addToCart } = cartItem
-
-        
+        console.log(this.props);
+        const cartItem = this.props.items.items[this.props.taskId]
+        const { id, title, image, price, size, description } = cartItem
+        const addToCart = this.props.addToCart
+    
         const sizes = Object.keys(size)
         const colorsArr = Object.values(size)
         const colorFunc = (colors) => {
@@ -36,7 +38,7 @@ class ItemPage extends Component {
                             <span className={styles.name}>Size:</span>
                             <div className={styles.sizes}>
                                 {sizes.map(item =>(
-                                    <span className={styles["size-specs"]}>{item}</span>
+                                    <span key={id + Math.random()} className={styles["size-specs"]}>{item}</span>
                                     )
                                 )}
                             </div>
@@ -45,7 +47,7 @@ class ItemPage extends Component {
                             <span className={styles.name}>Color:</span>
                             <div className={styles.colors}>
                                 {colors.map(item =>(
-                                    <div className={styles["color-specs"]} style={{backgroundColor: `${item}`}}></div>
+                                    <div key={id + Math.random()} className={styles["color-specs"]} style={{backgroundColor: `${item}`}}></div>
                                     )
                                 )}
                             </div>
@@ -55,7 +57,7 @@ class ItemPage extends Component {
                             <span className={styles.price}>${price}</span>
                         </div>
                         <div className={styles['add-cart-buttons']}>
-                            <button className={styles['add-cart-button']} >ADD TO CART</button>
+                            <button className={styles['add-cart-button']} onClick={addToCart.bind(this, cartItem)} >ADD TO CART</button>
                         </div>
                         <div className={styles.description}>
                             <span>{description}</span>
@@ -67,11 +69,16 @@ class ItemPage extends Component {
     }
 }
 
-const mapStateToProps = ({ items}) => ({
-  items: items.items
+const mapStateToProps = ({ items}, {taskId}) => ({
+    items: items
+//     addedCount: cart.cartItems.reduce(
+//       (count, item) => count + item, 
+//       0,
+//   )
 })
 
 const mapDispatchToProps = dispatch => ({
-  ...bindActionCreators(itemsActions, dispatch)
+    ...bindActionCreators(itemsActions, dispatch),
+    ...bindActionCreators(cartActions, dispatch),
 })
 export default connect(mapStateToProps, mapDispatchToProps)(ItemPage);
