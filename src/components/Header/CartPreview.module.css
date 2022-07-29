@@ -3,30 +3,65 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 32px 16px;
-    gap: 32px;
 }
+
+.cart-name {
+    margin-bottom: 32px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: #1D1F22;
+    text-align: left;
+}
+
+.totals {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+.total {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.total-price {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+}
+
 
 .btns{
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
     padding: 0px;
     gap: 10px;
-}
-
-.btn .btn-view {
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-}
-
-.btn .btn-check {
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+    margin-bottom: 22px;
 }
 
 .btn {
     text-transform: uppercase;
+    width: 140px;
+    height: 43px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.btns .btn-view {
+    background-color: transparent;
+    border: 1px solid #1D1F22
+}
+
+.btns .btn-check {
+    color: #FFFFFF;
+    background-color: #5ECE7B;
+    border: none;
 }

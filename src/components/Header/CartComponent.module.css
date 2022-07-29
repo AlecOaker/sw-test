@@ -1,0 +1,112 @@
+.container {
+    font-family: 'Raleway';
+    margin-bottom: 40px;
+    display: flex;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 4px;
+}
+
+.title-brand {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 160%;
+}
+
+.title-model {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 160%;
+    margin-bottom: 4px;
+}
+
+.prices {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 160%;
+}
+
+.name {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.sizes {
+    display: flex;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+.size-specs {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    border: 1px solid #1D1F22;
+    margin-right: 12px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.colors {
+    display: flex;
+    margin-top: 10px;
+}
+
+.color-specs {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+.counter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 8px;
+}
+
+.sign {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #1D1F22;display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.quantity {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #1D1F22;
+}
+
+.image {
+    width: 121px;
+    height: 190px;
+}

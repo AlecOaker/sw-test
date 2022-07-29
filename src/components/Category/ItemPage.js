@@ -6,16 +6,19 @@ import styles from './ItemPage.module.css'
 
 class ItemPage extends Component {
     render() {
-        const { id, title, image, price, size } = this.props.items[this.props.taskId]
+        const cartItem = this.props.items[this.props.taskId]
+        const { id, title, image, price, size, description, addToCart } = cartItem
 
         
         const sizes = Object.keys(size)
-        const colors = Object.values(size)
-        console.log(colors);
-        let total = 0
-        for (let i = 0; i < colors.length; i++) {
-            const element = colors[i];
+        const colorsArr = Object.values(size)
+        const colorFunc = (colors) => {
+            for (let i = 0; i < colors.length; i++) {
+                const element = colors[i]
+                return element
+            };
         }
+        const colors = Object.keys(colorFunc(colorsArr));
 
         return (
             <div className={styles.container}>
@@ -40,16 +43,23 @@ class ItemPage extends Component {
                         </div>
                         <div>
                             <span className={styles.name}>Color:</span>
-                            <div className={styles.sizes}>
-                                {sizes.map(item =>(
-                                    <span className={styles["size-specs"]}>{item}</span>
+                            <div className={styles.colors}>
+                                {colors.map(item =>(
+                                    <div className={styles["color-specs"]} style={{backgroundColor: `${item}`}}></div>
                                     )
                                 )}
                             </div>
                         </div>
-                        <div className={styles.price}></div>
-                        <div className={styles['add-cart-button']}></div>
-                        <div className={styles.description}></div>
+                        <div className={styles.prices}>
+                            <span className={styles.name}>Price:</span>
+                            <span className={styles.price}>${price}</span>
+                        </div>
+                        <div className={styles['add-cart-buttons']}>
+                            <button className={styles['add-cart-button']} >ADD TO CART</button>
+                        </div>
+                        <div className={styles.description}>
+                            <span>{description}</span>
+                        </div>
                     </div>
                 </div>
             </div>

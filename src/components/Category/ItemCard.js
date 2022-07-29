@@ -7,7 +7,6 @@ import { Link } from 'react-router-dom';
 
 const ItemCard = item => {
     const { title, price, image, id, size} = item
-    
 
     const sizeType = Object.values(size)
 
@@ -19,23 +18,23 @@ const ItemCard = item => {
         }
         return total
     }
-    // reduce((a, b) => Number(a) + Number(b), 0)
-        return (
-            <div className={styles.card}>
-                <Link to={`/women/${id}`}>
-                    <div className={stockSum(sizeType) > 0 ? styles.image : styles.stockless}>
-                        {stockSum(sizeType) < 1 ? <span className={styles.out}>Out of stock</span> : null}
-                        <img src={image} alt='avatar'/>
-                    </div>
-                </Link>
-                <div className={styles.content}>
-                    <span className="title">{title}</span>
-                    <div className="meta">
-                    <span className="price">${price}</span>
-                    </div>
+
+    return (
+        <div className={styles.card}>
+            <Link to={`/women/${id}`}>
+                <div className={stockSum(sizeType) > 0 ? styles.image : styles.stockless}>
+                    {stockSum(sizeType) < 1 ? <span className={styles.out}>Out of stock</span> : null}
+                    <img src={image} alt='avatar'/>
                 </div>
-                
+            </Link>
+            <div className={styles.content}>
+                <span className={styles.title}>{title}</span>
+                <div className={styles.meta}>
+                <span className={styles.price}>${price}</span>
+                </div>
             </div>
+            
+        </div>
     );
 }
 
